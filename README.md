@@ -1,4 +1,4 @@
-# ldapjs-promise
+# ldapjs-promise-cel
 
 [![Build Status][travis_image_url]](https://travis-ci.org/wslyhbb/node-ldapjs-promise)
 
@@ -33,6 +33,8 @@ The [ldapjs] authors made the search method a special method that returns an
 <code>EventEmitter</code> so the user can handle each
 <code>searchEntry</code> as it is returned. Since this library is just wrapping
 [ldapjs], it does not make any assumptions and returns the same <code>EventEmitter</code>.
+cel version - added createClient(options.clientEventListener) function register, that adds to the underlying ldapjs client
+client.on('error', clientEventListener), so it can handle connection resets and other extreme cases.
 
 In order to await all of the results you could:
 ```javascript
