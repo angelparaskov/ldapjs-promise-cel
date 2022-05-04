@@ -1,7 +1,7 @@
 {
-  "name": "ldapjs-promise",
-  "version": "1.0.7",
-  "description": "A simple promise wrapper around ldapjs.",
+  "name": "ldapjs-promise-cel",
+  "version": "1.1.7",
+  "description": "A simple promise wrapper around ldapjs with client event listener",
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run test:unit && npm run test:tsd",
@@ -10,18 +10,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/wslyhbb/node-ldapjs-promise.git"
+    "url": "git+https://github.com/angelparaskov/ldapjs-promise-cel.git"
   },
   "keywords": [
     "ldap",
     "ldapjs"
   ],
-  "author": "Wes Hobbie",
+  "author": "Wes Hobbie & minor - Angel Paraskov",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/wslyhbb/node-ldapjs-promise/issues"
+    "url": "https://github.com/angelparaskov/ldapjs-promise-cel/issues"
   },
-  "homepage": "https://github.com/wslyhbb/node-ldapjs-promise#readme",
+  "homepage": "https://github.com/angelparaskov/ldapjs-promise-cel#readme",
   "engines": {
     "node": ">=10"
   },
