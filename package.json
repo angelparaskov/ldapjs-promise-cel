@@ -1,9 +1,9 @@
 {
   "name": "ldapjs-promise-cel",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "A simple promise wrapper around ldapjs with client event listener",
   "main": "lib/index.js",
-  "types": "/lib/index.d.ts",
+  "types": "lib/index.d.ts",
   "scripts": {
     "test": "npm run test:unit && npm run test:tsd",
     "test:unit": "mocha",
@@ -15,7 +15,8 @@
   },
   "keywords": [
     "ldap",
-    "ldapjs"
+    "ldapjs",
+    "ldapjs-promise-cel"
   ],
   "author": "Wes Hobbie & minor - Angel Paraskov",
   "license": "ISC",

@@ -12,7 +12,7 @@ This is a simple wrapper around [ldapjs] for basic operations.
 
 ## Installation
 
-    npm install --save ldapjs-promise
+    npm install --save ldapjs-promise-cel
 
 ## Usage
 
@@ -21,7 +21,7 @@ For full docs, head on over to <http://ldapjs.org>.
 The methods signatures are the same except instead of callbacks they return promises.
 
 ```javascript
-const ldap = require('ldapjs-promise');
+import * as ldap from 'ldapjs-promise-cel';
 
 const client = ldap.createClient({
   url: 'ldap://127.0.0.1:1389',
