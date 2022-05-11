@@ -1,8 +1,9 @@
 {
   "name": "ldapjs-promise-cel",
-  "version": "1.1.8",
+  "version": "1.2.8",
   "description": "A simple promise wrapper around ldapjs with client event listener",
   "main": "lib/index.js",
+  "types": "/lib/index.d.ts",
   "scripts": {
     "test": "npm run test:unit && npm run test:tsd",
     "test:unit": "mocha",
@@ -26,7 +27,6 @@
     "node": ">=10"
   },
   "dependencies": {
-    "@types/ldapjs": "^2.2.0",
     "abstract-logging": "^2.0.1",
     "ldapjs": "^2.3.2"
   },

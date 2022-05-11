@@ -24,7 +24,10 @@ The methods signatures are the same except instead of callbacks they return prom
 const ldap = require('ldapjs-promise');
 
 const client = ldap.createClient({
-  url: 'ldap://127.0.0.1:1389'
+  url: 'ldap://127.0.0.1:1389',
+  clientEventListener: (err) => {
+      console.log(err);
+  }
 });
 await client.bind(dn, password);
 ```
@@ -33,7 +36,7 @@ The [ldapjs] authors made the search method a special method that returns an
 <code>EventEmitter</code> so the user can handle each
 <code>searchEntry</code> as it is returned. Since this library is just wrapping
 [ldapjs], it does not make any assumptions and returns the same <code>EventEmitter</code>.
-cel version - added createClient(options.clientEventListener) function register, that adds to the underlying ldapjs client
+cel version - added <code>createClient(options.clientEventListener)</code> function register, that adds to the underlying ldapjs client
 client.on('error', clientEventListener), so it can handle connection resets and other extreme cases.
 
 In order to await all of the results you could:
